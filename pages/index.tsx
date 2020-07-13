@@ -6,10 +6,10 @@ import {
   Switch,
   Slider,
   Button,
-} from 'antd'
+} from "antd";
 
-const FormItem = Form.Item
-const Option = Select.Option
+const FormItem = Form.Item;
+const Option = Select.Option;
 
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 8 }}
         >
-          <Switch defaultChecked name="switch" />
+          <Switch defaultChecked />
         </FormItem>
 
         <FormItem
@@ -52,12 +52,7 @@ export default function Home() {
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 8 }}
         >
-          <Select
-            size="large"
-            defaultValue="lucy"
-            style={{ width: 192 }}
-            name="select"
-          >
+          <Select size="large" defaultValue="lucy" style={{ width: 192 }}>
             <Option value="jack">jack</Option>
             <Option value="lucy">lucy</Option>
             <Option value="disabled" disabled>
@@ -83,6 +78,16 @@ export default function Home() {
           </Button>
         </FormItem>
       </Form>
+      <style jsx global>{`
+        html,
+        body {
+          padding: 0;
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.18;
+          -ms-overflow-style: none;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
