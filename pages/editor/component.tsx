@@ -16,7 +16,7 @@ export const Button = React.forwardRef(
               ? "white"
               : "#aaa"
             : active
-            ? "black"
+            ? "white"
             : "#ccc"};
         `,
       )}
